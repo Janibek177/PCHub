@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | PC Hub</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="png/img" href="image.png">
+</head>
+<body class="store-layout">
+    
+    <nav class="store-nav">
+        <div class="nav-left">
+            <h1 class="logo">PC HUB</h1>
+        </div>
+        <div class="nav-center">
+            <a href="index.html" class="nav-link">Terminal</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="brand.html" class="nav-link">Brands</a>
+            <a href="product.html" class="nav-link">Products</a>
+            <a href="exclusive.html" class="nav-link">Exclusive</a>
+        </div>
+        <div class="nav-right">
+            <a href="contact.html" class="nav-link" style="color: var(--neon-cyan);">Contact</a>
+        </div>
+    </nav>
+
+    <main class="store-main">
+        <div class="store-header">
+            <h2 class="mega-glow">SECURE TRANSMISSION</h2>
+            <p class="subtitle">Establish a direct connection with our engineering division.</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info-box">
+                <h3 class="cyan-text">Communication Nodes</h3>
+                <p>Have questions regarding custom architecture, enterprise orders, or hardware specifications? Transmit your data packets through our secure channels or visit our primary lab facility.</p>
+                
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <strong>LOCATION:</strong>
+                        <p>Sector 7, Tech District, Silicon Avenue</p>
+                    </div>
+                    <div class="detail-item">
+                        <strong>NETWORK MAIL:</strong>
+                        <p>core@pchub.system</p>
+                    </div>
+                    <div class="detail-item">
+                        <strong>OPERATIONAL HOURS:</strong>
+                        <p>24 / 7 / 365 Continuous Uptime</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-box">
+                <h3 class="cyan-text">Send Transmission</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your callsign...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your network email...">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Transmit your inquiry..."></textarea>
+                    </div>
+                    <button type="submit" class="screen-btn checkout-btn">SEND TRANSMISSION</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="back-link-wrapper-large" style="margin-top: 60px;">
+            <a href="index.html" class="screen-btn giant-btn">< Initialize Terminal Return</a>
+        </div>
+    </main>
+
+    <div class="notification-modal" id="notification-modal">
+        <div class="notification-content">
+            <h3 id="notification-title">SYSTEM ALERT</h3>
+            <p id="notification-text">Please fill in all fields before transmitting.</p>
+            <button class="screen-btn" id="notification-close">ACKNOWLEDGE</button>
+        </div>
+    </div>
+    <div class="overlay" id="notification-overlay"></div>
+
+    <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | PC Hub</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="icon" type="png/img" href="image.png">
+</head>
+<body class="store-layout">
+    <nav class="store-nav">
+        <div class="nav-left">
+            <h1 class="logo">PC HUB</h1>
+        </div>
+        <div class="nav-center">
+            <a href="index.html" class="nav-link">Terminal</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="brand.html" class="nav-link">Brands</a>
+        </div>
+        <div class="nav-right">
+            <div class="cart-trigger" id="cart-open">
+                <span class="icon">CART</span>
+                <span class="cart-badge" id="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="store-main">
+        <div class="store-header">
+            <h2 class="mega-glow">SYSTEM ARSENAL</h2>
+            <p class="subtitle">Select your hardware. Upgrade your reality.</p>
+        </div>
+
+        <div class="products-grid" id="products-container"></div>
+    </main>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-sidebar-header">
+            <h2>YOUR CART</h2>
+            <button id="cart-close" class="screen-btn close-btn">X</button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total-line">
+                <span>TOTAL:</span>
+                <span class="cyan-text">$<span id="cart-total">0</span></span>
+            </div>
+            <button class="screen-btn checkout-btn">PROCEED TO CHECKOUT</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="product.js"></script>
+</body>
+</html>
